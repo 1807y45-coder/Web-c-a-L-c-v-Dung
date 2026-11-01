@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ngôi trường thân yêu</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f8ff;
+    color: #333;
+}
+
+header {
+    background: #1677d2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #095ba8;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe66d;
+}
+
+.banner {
+    background: linear-gradient(120deg, #65b7ff, #a8e6cf);
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 36px;
+    color: #064477;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+h2.section-title {
+    text-align: center;
+    color: #1677d2;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.card .emoji {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #1677d2;
+    margin: 12px 0;
+}
+
+.about {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 1.8;
+    margin-top: 35px;
+}
+
+button {
+    background: #ff9f43;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #e98925;
+}
+
+footer {
+    background: #095ba8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🏫 TRƯỜNG THPT VĨNH TRẠCH</h1>
+    <p>Nơi chắp cánh những ước mơ</p>
+</header>
+
+<nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#activities">Hoạt động</a>
+    <a href="#contact">Liên hệ</a>
+</nav>
+
+<section class="banner" id="home">
+    <h2>Chào mừng bạn đến với trường học!</h2>
+    <p>Mỗi ngày đến trường là một ngày vui 🌻</p>
+    <button onclick="welcome()">Khám phá ngay</button>
+</section>
+
+<div class="container">
+
+    <h2 class="section-title">🌟 Các hoạt động nổi bật</h2>
+
+    <section class="cards" id="activities">
+
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h3>Học tập</h3>
+            <p>Khám phá kiến thức mới và phát triển tư duy mỗi ngày.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">⚽</div>
+            <h3>Thể thao</h3>
+            <p>Rèn luyện sức khỏe và xây dựng tinh thần đồng đội.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎨</div>
+            <h3>Sáng tạo</h3>
+            <p>Thỏa sức sáng tạo qua hội họa và các hoạt động STEM.</p>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h2>💙 Giới thiệu về nhà trường</h2>
+        <p>
+            Trường học là ngôi nhà thứ hai của mỗi học sinh.
+            Tại đây, các em được học tập, vui chơi, rèn luyện
+            kỹ năng và nuôi dưỡng những ước mơ đẹp.
+        </p>
+        <p>
+            Với sự tận tâm của thầy cô và tinh thần ham học
+            của các bạn học sinh, mỗi ngày đến trường đều
+            là một hành trình khám phá thú vị.
+        </p>
+    </section>
+
+    <section class="about" id="contact">
+        <h2>📞 Góc liên hệ</h2>
+        <p>Hãy cùng nhau xây dựng một môi trường học tập
+        thân thiện, tích cực và sáng tạo!</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 - Ngôi trường thân yêu</p>
+    <p>Học hết sức - Vui hết mình ❤️</p>
+</footer>
+
+<script>
+function welcome() {
+    alert("Chào mừng bạn đến với ngôi trường thân yêu! ❤️");
+}
+</script>
+
+</body>
+</html>
